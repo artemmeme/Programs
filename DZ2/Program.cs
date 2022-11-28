@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Напишите Х координату точки А");
+double Ax = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Напишите y координату точки А");
+double Ay = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Напишите Z координату точки А");
+double Az = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Напишите Х координату точки B");
+double Bx = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Напишите y координату точки B");
+double By = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Напишите Z координату точки B");
+double Bz = Convert.ToInt32(Console.ReadLine());
+double long_x = Bx - Ax;
+double long_y = By - Ay;
+double long_z = Bz - Az;
+double Long = Math.Sqrt((long_x * long_x) + (long_y * long_y) + (long_z * long_z));
+Console.WriteLine($"Расстояние между точками {Long}");
